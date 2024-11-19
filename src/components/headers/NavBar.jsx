@@ -20,7 +20,8 @@ const theme = createTheme({
   },
 });
 
-const NavBar = () => {
+const NavBar = (isAuthenticated) => {
+  isAuthenticated=false;
   const location = useLocation();
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isHome, setIsHome] = useState(false);
@@ -84,21 +85,52 @@ const NavBar = () => {
               </li>
             ))}
 
-            {/* Login/Logout/Register */}
-            <li>
-              <NavLink
-                to="/login"
-                className={({ isActive }) =>
-                  `font-bold ${
-                    isActive
-                      ? "text-secondary"
-                      : "text-black dark:text-white"
-                  } hover:text-secondary transition-colors duration-300`
-                }
-              >
-                Login
-              </NavLink>
-            </li>
+{/* Conditionally Render Links Based on Authentication */}
+{isAuthenticated ? (
+  <li>
+    <NavLink
+      to="/dashboard"
+      className={({ isActive }) =>
+        `font-bold ${
+          isActive ? "text-secondary" : "text-black dark:text-white"
+        } hover:text-secondary transition-colors duration-300`
+      }
+    >
+      Dashboard
+    </NavLink>
+  </li>
+) : (
+  <>
+    <li>
+      <NavLink
+        to="/login"
+        className={({ isActive }) =>
+          `font-bold ${
+            isActive ? "text-secondary" : "text-black dark:text-white"
+          } hover:text-secondary transition-colors duration-300`
+        }
+      >
+        Login
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/signup"
+        className={({ isActive }) =>
+          `font-bold ${
+            isActive ? "text-secondary" : "text-black dark:text-white"
+          } hover:text-secondary transition-colors duration-300`
+        }
+      >
+        Signup
+      </NavLink>
+    </li>
+  </>
+)}
+
+                    
+
+          
           </ul>
 
           {/* Dark Mode Toggle */}
