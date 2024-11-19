@@ -2,7 +2,11 @@ import React from 'react';
 
 const ClassCard = ({ className, image, availableSeats, price, totalStudents }) => {
   return (
-    <div className="shadow-lg rounded-lg p-3 flex flex-col justify-between border border-secondary overflow-hidden m-4" tabindex="0" style={{ transform: 'none' }}>
+
+
+
+    <div             className="flex flex-col  p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105   "
+   >
       {/* Image */}
       <img loading="lazy" className="h-48 w-full object-cover" src={image} alt={className} style={{ opacity: 1 }} />
       
@@ -70,28 +74,31 @@ const PopularClasses = () => {
 
   return (
     <div className="md:w-[80%] mx-auto my-36">
-      <h1 className="text-5xl font-bold text-center">
-        Our <span className="text-secondary">Popular</span> Classes
-      </h1>
-      <div className="w-[40%] text-center mx-auto my-4">
-        <p className="text-gray-500">
-          Explore our Popular Classes. Here are some of the popular classes based on how many students enrolled.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-        {classData.map((classItem, index) => (
-          <ClassCard 
-            key={index} 
-            className={classItem.name}
-            image={classItem.image}
-            availableSeats={classItem.availableSeats}
-            price={classItem.price}
-            totalStudents={classItem.totalStudents}
-          />
-        ))}
-      </div>
+    <h1 className="text-5xl font-bold text-center">
+      Our <span className="text-secondary">Popular</span> Classes
+    </h1>
+    <div className="w-[40%] text-center mx-auto my-4">
+      <p className="text-gray-500">
+        Explore our Popular Classes. Here are some of the popular classes based on how many students enrolled.
+      </p>
     </div>
+  
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      {classData.map((classItem, index) => (
+        <ClassCard
+          key={index}
+          name={classItem.name}
+          image={classItem.image}
+          availableSeats={classItem.availableSeats}
+          price={classItem.price}
+          totalStudents={classItem.totalStudents}
+        />
+      ))}
+    </div>
+
+
+  </div>
+  
   );
 };
 

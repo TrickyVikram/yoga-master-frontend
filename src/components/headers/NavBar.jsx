@@ -66,7 +66,7 @@ const NavBar = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul className="hidden md:flex items-center space-x-6">
+          <ul className="hidden md:flex  items-center space-x-6">
             {navLinks.map((link) => (
               <li key={link.route}>
                 <NavLink

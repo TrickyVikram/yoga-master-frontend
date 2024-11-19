@@ -5,6 +5,7 @@ import HeroContainer from "./hero/HeroContainer";
 import Gallary from "./gallary/Gallary";
 import PopularClasses from "./popularClasses/PopularClasses";
 import TeachersSection from "./TeachersSection/TeachersSection";
+import Banner from "../../layout/Banner";
 
 const Home = () => {
   return (
@@ -20,12 +21,18 @@ const Home = () => {
             <PopularClasses/>
           </div>
 
-          <div className="max-w-screen-xl mx-auto">
+          <div className="mx-auto">
             <TeachersSection/>
           </div>
 
-        </section>
+         <div>
+         <Banner/>
+         </div>
 
+        </section>
+  
+           
+         
 
       </div>
     </>

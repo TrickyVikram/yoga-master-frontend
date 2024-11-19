@@ -38,7 +38,7 @@ function TeachersSection() {
   ];
 
   return (
-    <div className="py-12 bg-gray-50 dark:bg-gray-900">
+    <div className="py-12 ">
       <h1 className="text-5xl font-bold text-center text-secondary">
         Our <span className="text-black dark:text-white">Amazing</span> Teachers
       </h1>
@@ -46,7 +46,7 @@ function TeachersSection() {
         {teacherData.map((teacher, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105"
+            className="flex flex-col items-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105   "
           >
             <img
               className="rounded-full border-4 border-gray-300 dark:border-gray-600 h-24 w-24 mb-4"
