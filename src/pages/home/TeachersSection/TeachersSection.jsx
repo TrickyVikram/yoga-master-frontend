@@ -3,7 +3,7 @@ import React from 'react';
 function TeachersSection() {
   const teacherData = [
     {
-      name: "Vikram",
+      name: "Vikram Kumar",
       role: "Instructor",
       totalStudents: 12,
       imageUrl: "https://avatars.githubusercontent.com/u/114013697?v=4",
@@ -14,10 +14,10 @@ function TeachersSection() {
       },
     },
     {
-      name: "Beauty",
+      name: "Beauty Kumar",
       role: "Instructor",
       totalStudents: 11,
-      imageUrl: "https://avatars.githubusercontent.com/u/114013697?v=4",
+      imageUrl: "https://avatars.githubusercontent.com/u/131740228?v=4",
       socialLinks: {
         facebook: "https://facebook.com",
         linkedin: "https://linkedin.com",
@@ -25,10 +25,10 @@ function TeachersSection() {
       },
     },
     {
-      name: "Vikram1",
+      name: "Vivek Kumar",
       role: "Instructor",
       totalStudents: 22,
-      imageUrl: "https://avatars.githubusercontent.com/u/114013697?v=4",
+      imageUrl: "https://avatars.githubusercontent.com",
       socialLinks: {
         facebook: "https://facebook.com",
         linkedin: "https://linkedin.com",

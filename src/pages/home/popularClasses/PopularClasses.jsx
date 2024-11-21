@@ -5,7 +5,7 @@ const ClassCard = ({ className, image, availableSeats, price, totalStudents }) =
 
 
 
-    <div             className="flex flex-col  p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105   "
+    <div className="flex flex-col  p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105   "
    >
       {/* Image */}
       <img loading="lazy" className="h-48 w-full object-cover" src={image} alt={className} style={{ opacity: 1 }} />

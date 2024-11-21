@@ -2,9 +2,9 @@ import React from "react";
 
 const Instructors = () => {
   const instructors = [
-    { name: "John Doe", expertise: "Hatha Yoga", experience: "10 years", email: "help.yourassistant@gmail.com", image: "https://lh3.googleusercontent.com/a/ACg8ocL6Q-VCGYl5GxXYYJ-GvrdaBHweSrlZfKH8mzm4Pcfx-AfCNg=s96-c" },
-    { name: "Jane Smith", expertise: "Ashtanga Yoga", experience: "8 years", email: "jane.smith@email.com", image: "https://i.ibb.co/J3ZYyK7/jane-smith.jpg" },
-    { name: "Alex Johnson", expertise: "Meditation", experience: "12 years", email: "alex.johnson@email.com", image: "https://i.ibb.co/7YjLg8S/alex-johnson.jpg" },
+    { name: "Vikram Kumar", expertise: "Hatha Yoga", experience: "10 years", email: "abc@email.com", image: "https://lh3.googleusercontent.com/a/ACg8ocL6Q-VCGYl5GxXYYJ-GvrdaBHweSrlZfKH8mzm4Pcfx-AfCNg=s96-c" },
+    { name: "Beauty Kumari", expertise: "Ashtanga Yoga", experience: "8 years", email: "abc@email.com", image: "https://i.ibb.co/J3ZYyK7/jane-smith.jpg" },
+    { name: "Vivek Kumar", expertise: "Meditation", experience: "5 years", email: "abc@email.com", image: "https://i.ibb.co/7YjLg8S/alex-johnson.jpg" },
   ];
 
   return (
